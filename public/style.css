@@ -4,7 +4,9 @@ header{
 	z-index: 34242;
 }
 
-
+.table{
+  justify-self: center;
+}
 
 
 #promociones{
@@ -24,7 +26,7 @@ footer{
 }
 
 .btn-link:hover, .fab:hover {
-	color: black;
+	color: red;
 	
 }
 
