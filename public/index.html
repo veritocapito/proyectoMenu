@@ -7,7 +7,6 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">		
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <script src="index.js"></script>
         <title>Menu</title>
     </head>
     <body>
@@ -21,7 +20,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                                <a class="nav-link active" aria-current="page" href="https://wa.me/+541130954760?text=Hola,%20Resto%20Floresta!%20Quiero%20hacer%20un%20pedido." target="_blank">Hacer Pedido</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#promociones">Promociones</a>
@@ -35,6 +34,8 @@
                                         <li><a class="dropdown-item" href="#carnes">Carnes</a></li>
                                         <li><a class="dropdown-item" href="#pizzas">Pizzas</a></li>
                                         <li><a class="dropdown-item" href="#saludable">Platos Saludables</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#random">Plato Random</a></li>
                                         <li><hr class="dropdown-divider"></li>
                                         <li><a class="dropdown-item" href="#novedades">Quiero recibir novedades!</a></li>
                                 </ul>
@@ -60,7 +61,7 @@
             
                 <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                     <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg card-1" style="background-image: url('/public/img/meat.jpg'); background-position: top; background-size: cover;">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg card-1" style="background-image: url('/img/meat.jpg'); background-position: top; background-size: cover;">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                             <h3 class="pt-5 mt-5 mb-5 display-6 lh-1 fw-bold ">Minutas y carnes.</h3>
                             <ul class="d-flex list-unstyled mt-auto justify-content-end">
@@ -73,7 +74,7 @@
                     </div>
                 
                     <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('/public/img/pizza.jpg'); background-size: cover;" >
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('/img/pizza.jpg'); background-size: cover;" >
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                             <h3 class="pt-5 mt-5 mb-5 display-6 lh-1 fw-bold">Pizzas y Empanadas</h3>
                             <ul class="d-flex list-unstyled mt-auto justify-content-end">
@@ -86,9 +87,9 @@
                     </div>
                 
                     <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('/public/img/vegetable.jpg'); background-size: cover;">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('/img/vegetable.jpg'); background-size: cover;">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-5 display-6 lh-1 fw-bold text-dec">Platos Saludables</h3>
+                            <h3 class="pt-5 mt-5 mb-5 display-6 lh-1 fw-bold">Platos Saludables</h3>
                             <ul class="d-flex list-unstyled mt-auto justify-content-end">
                                 <li class="d-flex me-3">
                                     <a class="btn btn-danger px-4" href="#saludable">Ver más</a>
@@ -117,31 +118,34 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td scope="row" class="text-start">Clasica (solo carne)</td>
+                                    <td scope="row" class="text-start" id="comida1">Milanesa Clasica (solo carne)</td>
                                     <td>$ 1.500.-</td>
                                 </tr>
                                 <tr>
-                                    <td scope="row" class="text-start">A Caballo (doble huevo frito)</td>
+                                    <td scope="row" class="text-start" id="comida2">Milanesa A Caballo (doble huevo frito)</td>
                                     <td>$ 1.800.-</td>
                                 </tr>
                                 <tr>
-                                    <td scope="row" class="text-start">Napolitana (jamon natural, queso muzzarella y tomates)</td>
+                                    <td scope="row" class="text-start" id="comida3">Milanesa Napolitana (jamon natural, queso muzzarella y tomates)</td>
                                     <td>$ 1.850.-</td>
                                 </tr>
                                 <tr>
-                                    <td scope="row" class="text-start">Provolone (jamon natural y queso provolone)</td>
+                                    <td scope="row" class="text-start" id="comida4">Milanesa Provolone (jamon natural y queso provolone)</td>
                                     <td>$ 1.900.-</td>
                                 </tr>
                                 <tr>
-                                    <td scope="row" class="text-start">Fugazzetta (cebolla morada y queso muzzarella)</td>
+                                    <td scope="row" class="text-start" id="comida5">Milanesa Maryland (con banana y salsa humita)</td>
                                     <td>$ 1.900.-</td>
                                 </tr>
-                                <tr>
                             </tbody>
                         </table>
+                        <a href="#inicio"><h6 class="display-7 text-end m-5 fw-bold text-dark " >Ir arriba</h6></a>
                     </div>
                 </div>
-                <h2 class="display-7 text-center m-5 fw-bold text-danger" id="carnes">Carnes</h2>
+
+                <span id="carnes" class="p-5"></span>
+
+                <h2 class="display-7 text-center m-5 fw-bold text-danger" >Carnes</h2>
                 <div class="row d-flex justify-content-center">
                     <div class="table-responsive  col-md-9" >
                         <table class="table">
@@ -153,31 +157,35 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td scope="row" class="text-start">Costillas a la riojana (cerdo)</td>
+                                    <td scope="row" class="text-start" id="comida6">Costillas a la Riojana (cerdo)</td>
                                     <td>$ 1.500.-</td>
                                 </tr>
                                 <tr>
-                                    <td scope="row" class="text-start">Matambrito relleno (al verdeo)</td>
+                                    <td scope="row" class="text-start" id="comida7">Matambrito Relleno (al verdeo)</td>
                                     <td>$ 1.800.-</td>
                                 </tr>
                                 <tr>
-                                    <td scope="row" class="text-start">Ojo de bife (con salsa criolla y chimichurri)</td>
+                                    <td scope="row" class="text-start" id="comida8">Ojo de Bife (con salsa criolla y chimichurri)</td>
                                     <td>$ 1.850.-</td>
                                 </tr>
                                 <tr>
-                                    <td scope="row" class="text-start">Pollo al horno (con verduras asadas)</td>
+                                    <td scope="row" class="text-start" id="comida9">Pollo al Horno (con verduras asadas)</td>
                                     <td>$ 1.900.-</td>
                                 </tr>
                                 <tr>
-                                    <td scope="row" class="text-start">Fugazzetta (cebolla morada y queso muzzarella)</td>
-                                    <td>$ 1.900.-</td>
+                                    <td scope="row" class="text-start" id="comida10">Arroz con hongos y azafran (con ribs de pollo)</td>
+                                    <td>$ 2.200.-</td>
                                 </tr>
                                 <tr>
                             </tbody>
                         </table>
+                        <a href="#menu"><h6 class="display-7 text-end m-5 fw-bold text-dark " >Ir arriba</h6></a>
                     </div>
                 </div>
-                <h2 class="display-7 text-center m-5 fw-bold text-danger" id="pizzas">Pizzas</h2>
+
+                <span id="pizzas" class="p-5"></span>
+
+                <h2 class="display-7 text-center m-5 fw-bold text-danger">Pizzas</h2>
                 <div class="row d-flex justify-content-center">
                     <div class="table-responsive  col-md-9" >
                         <table class="table">
@@ -189,32 +197,35 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td scope="row" class="text-start">Margarita (queso muzzarella)</td>
+                                    <td scope="row" class="text-start" id="comida11">Pizza Margarita (queso muzzarella)</td>
                                     <td>$ 1.500.-</td>
                                 </tr>
                                 <tr>
-                                    <td scope="row" class="text-start">Italiana (jamon natural y morrones)</td>
+                                    <td scope="row" class="text-start" id="comida12">Pizza Italiana (jamon natural y morrones)</td>
                                     <td>$ 1.800.-</td>
                                 </tr>
                                 <tr>
-                                    <td scope="row" class="text-start">Napolitana (jamon natural, queso muzzarella y tomates)</td>
+                                    <td scope="row" class="text-start" id="comida13">Pizza Napolitana (jamon natural, queso muzzarella y tomates)</td>
                                     <td>$ 1.850.-</td>
                                 </tr>
                                 <tr>
-                                    <td scope="row" class="text-start">Provolone (jamon natural y queso provolone)</td>
+                                    <td scope="row" class="text-start" id="comida14">Pizza Provolone (jamon natural y queso provolone)</td>
                                     <td>$ 1.900.-</td>
                                 </tr>
                                 <tr>
-                                    <td scope="row" class="text-start">Fugazzetta (cebolla morada y queso muzzarella)</td>
+                                    <td scope="row" class="text-start" id="comida15">Pizza Fugazzetta (cebolla morada y queso muzzarella)</td>
                                     <td>$ 1.900.-</td>
                                 </tr>
                                 <tr>
                             </tbody>
                         </table>
+                        <a href="#menu"><h6 class="display-7 text-end m-5 fw-bold text-dark " >Ir arriba</h6></a>
                     </div>
                 </div>
 
-                <h2 class="display-7 text-center m-5 fw-bold text-danger" id="saludable">Platos Saludables</h2>
+                <span id="saludable" class="p-5"></span>
+
+                <h2 class="display-7 text-center m-5 fw-bold text-danger">Platos Saludables</h2>
                 <div class="row d-flex justify-content-center">
                     <div class="table-responsive  col-md-9" >
                         <table class="table">
@@ -226,194 +237,200 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td scope="row" class="text-start">Ensalada Cesar (con salsa Floresta)</td>
+                                    <td scope="row" class="text-start" id="comida16">Ensalada Cesar (con salsa Floresta)</td>
                                     <td>$ 1.500.-</td>
                                 </tr>
                                 <tr>
-                                    <td scope="row" class="text-start">Merluza al Vapor (con creppe de papas)</td>
+                                    <td scope="row" class="text-start" id="comida17">Merluza al Vapor (con creppe de papas)</td>
                                     <td>$ 1.800.-</td>
                                 </tr>
                                 <tr>
-                                    <td scope="row" class="text-start">Arroz Basmati (con atun y alioli)</td>
+                                    <td scope="row" class="text-start" id="comida18">Arroz Basmati (con atun y alioli)</td>
                                     <td>$ 1.850.-</td>
                                 </tr>
                                 <tr>
-                                    <td scope="row" class="text-start">Verduras al Wok (con queso philadelfia)</td>
+                                    <td scope="row" class="text-start" id="comida19">Verduras al Wok (con queso philadelfia)</td>
                                     <td>$ 1.900.-</td>
                                 </tr>
                                 <tr>
-                                    <td scope="row" class="text-start">Quiche Caprese (con tomates frescos y albahaca)</td>
+                                    <td scope="row" class="text-start" id="comida20">Quiche Caprese (con tomates frescos y albahaca)</td>
                                     <td>$ 1.900.-</td>
                                 </tr>
                                 <tr>
                             </tbody>
                         </table>
+                        <a href="#menu"><h6 class="display-7 text-end m-5 fw-bold text-dark " >Ir arriba</h6></a>
                     </div>
                 </div>
-
             </div>
         </section>
 
+        <span id="promociones" class="p-5"></span>
+
         <section class="sec-promociones">
-            <div class="container px-4 py-5" id="promociones">
+            <div class="container px-4 py-5">
                 <h2 class="pb-2 border-bottom text-dark">Promociones</h2>
                 <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
                     <div class="col">
-                      <div class="card mb-4 rounded-3 shadow-sm">
-                        <div class="card-header py-3 text-bg-dark">
-                          <h4 class="my-0 fw-normal">Promo 1</h4>
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3 text-bg-dark">
+                                <h4 class="my-0 fw-normal">Promo 1</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$3.800.-</h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>1 Pizza Margarita Grande</li>
+                                    <li>2 porciones de Fainá</li>
+                                    <li>2 Empanadas de Carne</li>
+                                    <li>1 Cerveza Litro o Gaseosa</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="card-body">
-                          <h1 class="card-title pricing-card-title">$3.800.-</h1>
-                          <ul class="list-unstyled mt-3 mb-4">
-                            <li>1 Pizza Margarita Grande</li>
-                            <li>2 porciones de Fainá</li>
-                            <li>2 Empanadas de Carne</li>
-                            <li>1 Cerveza Litro o Gaseosa</li>
-                          </ul>
-                          <button type="button" class="w-100 btn btn-lg btn-outline-danger">Comprar</button>
-                        </div>
-                      </div>
                     </div>
                     <div class="col">
-                      <div class="card mb-4 rounded-3 shadow-sm">
-                        <div class="card-header py-3 text-bg-dark">
-                          <h4 class="my-0 fw-normal">Promo 2</h4>
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3 text-bg-dark">
+                                <h4 class="my-0 fw-normal">Promo 2</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$2.500.-</h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>1 docena Empanadas</li>
+                                    <li>2 porciones de Fainá</li>
+                                    <li>2 porciones de Pizza</li>
+                                    <li>1 Cerveza Litro o Gaseosa</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="card-body">
-                          <h1 class="card-title pricing-card-title">$2.500.-</h1>
-                          <ul class="list-unstyled mt-3 mb-4">
-                            <li>1 docena Empanadas</li>
-                            <li>2 porciones de Fainá</li>
-                            <li>2 porciones de Pizza</li>
-                            <li>1 Cerveza Litro o Gaseosa</li>
-                          </ul>
-                          <button type="button" class="w-100 btn btn-lg btn-outline-danger">Comprar</button>
-                        </div>
-                      </div>
                     </div>
                     <div class="col">
-                      <div class="card mb-4 rounded-3 shadow-sm ">
-                        <div class="card-header py-3 text-bg-dark">
-                          <h4 class="my-0 fw-normal">Promo 3</h4>
+                        <div class="card mb-4 rounded-3 shadow-sm ">
+                            <div class="card-header py-3 text-bg-dark">
+                                <h4 class="my-0 fw-normal">Promo 3</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$4.900.-</h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>1 Pizza Napolitana Grande</li>
+                                    <li>1 Pizza Italiana Grande</li>
+                                    <li>4 porciones de Fainá</li>
+                                    <li>2 Cerveza Litro o Gaseosa</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="card-body">
-                          <h1 class="card-title pricing-card-title">$4.900.-</h1>
-                          <ul class="list-unstyled mt-3 mb-4">
-                            <li>1 Pizza Napolitana Grande</li>
-                            <li>1 Pizza Italiana Grande</li>
-                            <li>4 porciones de Fainá</li>
-                            <li>2 Cerveza Litro o Gaseosa</li>
-                          </ul>
-                          <button type="button" class="w-100 btn btn-lg btn-outline-danger">Comprar</button>
-                        </div>
-                      </div>
                     </div>
-                  </div>
-              
+                </div>            
             </div>
         </section>
 
-        <section class="sec-novedades">
+        <span id="random" class="p-5"></span>
+
+        <section class="sec-random">
             <div class="container px-4 py-5 " id="novedades">
+                <h2 class="pb-2 border-bottom text-dark">Te ayudamos a elegir tu plato!</h2>
+                <h5 class="pt-3">Si hoy te cuesta decidirte, o queres arriesgarte a probar algo nuevo? Nosotros te ayudamos. Animate a una nueva forma de elegir tu comida! Haz click en el boton de abajo.</h5>
+                <div class="row pt-5 h-100 ">
+                    <div class="col-md-3 pt-3">
+                        <button type="button" class="w-100 btn btn-lg btn-dark" id="btn-random">Elegir mi plato random</button>
+                    </div>
+                    <div class="col-md-9">
+                        <img src="" alt="" id="image">
+                        <h3 id="txt" class="text-danger"></h3>
+                    </div>
+                </div>
+                <div class="row py-5 h-100 ">
+                    <div class="col-md-9 text-end">
+                        <h3 class="pt-5 align-content-center" id="txt2"></h3>
+                    </div>
+                    <div class="col-md-3 pt-5">
+                        <a href="https://wa.me/+541130954760?text=Hola,%20Resto%20Floresta!%20Quiero%20hacer%20un%20pedido." class="w-100 btn btn-lg btn-danger" id="btn-random">Hacer Pedido!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <span id="novedades" class="p-5"></span>
+
+        <section class="sec-novedades mb-5">
+            <div class="container px-4 py-5 ">
                 <h2 class="pb-2 border-bottom text-dark">Novedades</h2>
                 <div class="container py-5 h-100 ">
                     <div class="row justify-content-center align-items-center h-100 pt-5 pb-5">
                         <div class="col-12 col-lg-9 col-xl-7 ">
                             <div class="card shadow-2-strong card-registration text-bg-dark" style="border-radius: 15px;">
-                            <div class="card-body p-4 p-md-5">
-                                <h3 class="mb-2 pb-2 pb-md-0 mb-md-2">¿Queres recibir promociones exclusivas?</h3>
-                                <h5 class="mb-5 pb-2 pb-md-0 mb-md-5 fw-light">Registrate y se parte de Resto Floresta</h5>
-                                <form>
-
-                                <div class="row">
-                                    <div class="col-md-6 mb-4">
-                    
-                                    <div class="form-outline">
-                                        <input type="text" id="nombre" class="form-control form-control-lg" />
-                                        <label class="form-label" for="nombre">Nombre/s</label>
-                                    </div>
-                    
-                                    </div>
-                                    <div class="col-md-6 mb-4">
-                    
-                                    <div class="form-outline">
-                                        <input type="text" id="apellido" class="form-control form-control-lg" />
-                                        <label class="form-label" for="apellido">Apellido/s</label>
-                                    </div>
-                    
-                                    </div>
+                                <div class="card-body p-4 p-md-5">
+                                    <h3 class="mb-2 pb-2 pb-md-0 mb-md-2">¿Queres recibir promociones exclusivas?</h3>
+                                    <h5 class="mb-5 pb-2 pb-md-0 mb-md-5 fw-light">Registrate y se parte de Resto Floresta</h5>
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-4">                            
+                                                <div class="form-outline">
+                                                    <input type="text" id="nombre" class="form-control form-control-lg" />
+                                                    <label class="form-label" for="nombre">Nombre/s</label>
+                                                </div>                            
+                                            </div>
+                                            <div class="col-md-6 mb-4">                            
+                                                <div class="form-outline">
+                                                    <input type="text" id="apellido" class="form-control form-control-lg" />
+                                                    <label class="form-label" for="apellido">Apellido/s</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-4 d-flex align-items-center">                            
+                                                <div class="form-outline datepicker w-100">
+                                                    <input type="text" class="form-control form-control-lg" id="nacimiento" />
+                                                    <label for="nacimiento" class="form-label">Fecha de Nacimiento</label>
+                                                </div>
+                                            </div>                         
+                                                <div class="col-md-6 mb-4">
+                                                    <h6 class="mb-2 pb-1">Genero: </h6>                         
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femenino"
+                                                    value="option1" checked />
+                                                    <label class="form-check-label" for="femenino">Femenino</label>
+                                                </div>                            
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="masculino"
+                                                    value="option2" />
+                                                    <label class="form-check-label" for="masculino">Masculino</label>
+                                                </div>                            
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otroGenero"
+                                                    value="option3" />
+                                                    <label class="form-check-label" for="otroGenero">Otro</label>
+                                                </div>
+                                            </div>   
+                                        </div>                           
+                                        <div class="row">
+                                            <div class="col-md-6 mb-4 pb-2">                            
+                                                <div class="form-outline">
+                                                    <input type="email" id="email" class="form-control form-control-lg" />
+                                                    <label class="form-label" for="email">Email</label>
+                                                </div>                            
+                                            </div>
+                                            <div class="col-md-6 mb-4 pb-2">                            
+                                                <div class="form-outline">
+                                                    <input type="tel" id="numeroTelefono" class="form-control form-control-lg" />
+                                                    <label class="form-label" for="numeroTelefono">Numero Celular</label>
+                                                </div>                            
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 mt-4 ">
+                                                <input class="btn w-100 btn-outline-light btn-lg" type="submit" value="Enviar" />
+                                            </div>
+                                        </div>                        
+                                    </form>
                                 </div>
-                    
-                                <div class="row">
-                                    <div class="col-md-6 mb-4 d-flex align-items-center">
-                    
-                                    <div class="form-outline datepicker w-100">
-                                        <input type="text" class="form-control form-control-lg" id="nacimiento" />
-                                        <label for="nacimiento" class="form-label">Fecha de Nacimiento</label>
-                                    </div>
-                    
-                                    </div>
-                                    <div class="col-md-6 mb-4">
-                    
-                                    <h6 class="mb-2 pb-1">Genero: </h6>
-                    
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femenino"
-                                        value="option1" checked />
-                                        <label class="form-check-label" for="femenino">Femenino</label>
-                                    </div>
-                    
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="masculino"
-                                        value="option2" />
-                                        <label class="form-check-label" for="masculino">Masculino</label>
-                                    </div>
-                    
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otroGenero"
-                                        value="option3" />
-                                        <label class="form-check-label" for="otroGenero">Otro</label>
-                                    </div>
-                    
-                                    </div>
-                                </div>
-                    
-                                <div class="row">
-                                    <div class="col-md-6 mb-4 pb-2">
-                    
-                                    <div class="form-outline">
-                                        <input type="email" id="email" class="form-control form-control-lg" />
-                                        <label class="form-label" for="email">Email</label>
-                                    </div>
-                    
-                                    </div>
-                                    <div class="col-md-6 mb-4 pb-2">
-                    
-                                    <div class="form-outline">
-                                        <input type="tel" id="numeroTelefono" class="form-control form-control-lg" />
-                                        <label class="form-label" for="numeroTelefono">Numero Celular</label>
-                                    </div>
-                    
-                                    </div>
-                                </div>
-                                <div class="row">
-
-                                    <div class="col-md-12 mt-4 ">
-                                        <input class="btn w-100 btn-outline-light btn-lg" type="submit" value="Enviar" />
-                                    </div>
-                                </div>
-                    
-                                </form>
                             </div>
-                            </div>
-                        </div>
                         </div>
                     </div>
-
+                </div>
+            </div>
         </section>
 
-        <footer class="p-1 bg-dark text-white">
+        <footer class="p-1 mt-5 bg-dark text-white">
             <div class="container ">
                 <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
                     <p>&copy; 2022 - Resto Floresta. Derechos reservados.</p>
@@ -421,7 +438,7 @@
 						<li class="ms-3"><a class="link-dark" target="_blank" href="https://www.instagram.com/estudio_capobianco/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram btn-link" viewBox="0 0 16 16">
 							<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
 						</svg></use></svg></a></li>
-						<li class="ms-3"><a class="link-dark" target="_blank" href="https://wa.me/+541130954760?text=Hola,%20Resto%20Floresta!%20Quiero%20hacer%20una%20consulta."><i class="fab fa-whatsapp"></i></a></li>
+						<li class="ms-3"><a class="link-dark" target="_blank" href="https://wa.me/+541130954760?text=Hola,%20Resto%20Floresta!%20Quiero%20hacer%20un%20pedido."><i class="fab fa-whatsapp"></i></a></li>
 						<li class="ms-3"><a class="link-dark" target="_blank" href="https://www.facebook.com/InfoCapobianco" ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook btn-link" viewBox="0 0 16 16">
 							<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
 						</svg></a></li>
@@ -429,7 +446,9 @@
                 </div>
             </div>
         </footer>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/edd2efc64a.js" crossorigin="anonymous"></script>
+        <script src="/public/index.js"></script>
     </body>
 </html>

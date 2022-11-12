@@ -39,6 +39,14 @@ footer{
   justify-content: center;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+#image{
+  width: 75px;
+}
+
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
