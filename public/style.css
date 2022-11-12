@@ -35,6 +35,10 @@ footer{
 	
 }
 
+.btn-outline-light{
+  justify-content: center;
+}
+
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -85,3 +89,13 @@ footer{
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
   }
+
+  .card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+    .card-registration .select-arrow {
+    top: 13px;
+    }
