@@ -12,7 +12,7 @@ var menu = [
     document.getElementById("comida2").textContent,
     document.getElementById("comida3").textContent,
     document.getElementById("comida4").textContent,
-    document.getElementById("comida5".textContent),
+    document.getElementById("comida5").textContent,
     document.getElementById("comida6").textContent,
     document.getElementById("comida7").textContent,
     document.getElementById("comida8").textContent,
@@ -32,8 +32,9 @@ var menu = [
 
 boton.addEventListener("click", () => {
     image.src = "img/loading.gif"
+    txt.innerText="";
     setTimeout( function (){
-        var comidaRandom = decididor(19,1);
+        var comidaRandom = decididor(menu.indexOf(menu[menu.length-1]),menu.indexOf(menu[0]));
         txt.innerText ="Hoy te recomendamos comer "+ menu[comidaRandom];
         txt2.innerHTML ="Todo listo! Ya podes comunicarte con nosotros...";
         image.src="";

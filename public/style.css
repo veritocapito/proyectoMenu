@@ -4,6 +4,10 @@ header{
 	z-index: 34242;
 }
 
+.dropdown-item:active{
+  text-decoration: btn-dark;
+}
+
 .table{
   justify-self: center;
 }
@@ -25,7 +29,7 @@ footer{
     font-size: 1.6em;
 }
 
-.btn-link:hover, .fab:hover {
+.btn-link:hover, .fab:hover, .link-primary:hover {
 	color: red;
 	
 }
