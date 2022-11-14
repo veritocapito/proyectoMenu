@@ -41,3 +41,4 @@ boton.addEventListener("click", () => {
     }, 2000);
 });
 
+export { boton, txt, txt2, image, decididor, menu, comidaRandom };

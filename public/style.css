@@ -29,7 +29,7 @@ footer{
     font-size: 1.6em;
 }
 
-.btn-link:hover, .fab:hover, .link-primary:hover {
+.btn-link:hover, .fab:hover {
 	color: red;
 	
 }
